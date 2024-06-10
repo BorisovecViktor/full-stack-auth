@@ -12,7 +12,8 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
   credentials: true,
-  origin: process.env.CLIENT_URL
+  origin: ['https://auth-frontend-ashen.vercel.app'],
+  methods: ["GET", "POST"]
 }));
 app.use('/', router);
 app.use(errorMiddleware);
