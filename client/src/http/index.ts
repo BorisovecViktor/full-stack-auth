@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { AuthResponse } from '../models/response/auth-response'
 
-export const API_URL = `http://localhost:4200/api`
+export const API_URL = `https://auth-api-orcin.vercel.app/api`
 
 const $api = axios.create({
   withCredentials: true,
